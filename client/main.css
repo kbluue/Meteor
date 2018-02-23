@@ -48,18 +48,19 @@ body {
     position: relative;
   }
    
-  .new-task input {
+  .elementName input {
     box-sizing: border-box;
     padding: 10px 0;
     background: transparent;
+    background-color: bisque;
     border: none;
     width: 100%;
     padding-right: 80px;
     font-size: 1em;
   }
    
-  .new-task input:focus{
-    outline: 0;
+  .elementName input:focus{
+    outline: 1;
   }
    
   ul {
@@ -127,7 +128,7 @@ body {
       clear: both;
     }
    
-    .new-task input {
+    .elementName input {
       padding-bottom: 5px;
     }
   }

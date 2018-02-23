@@ -4,16 +4,19 @@
         <h1>Todo List</h1>
         </header>
 
+        
+        <form class="elementName"><!-- Also element tag for styling sake -->
+            <input type="text" name="text" placeholder="Type to add to DB"/>
+        </form>
+
         <ul>
         {{#each myTasks}}
-            {{#if equals8 text}}
-                {{> test}}
-            {{/if}}
             {{> task}}
         {{/each}}
         {{#each mongoTasks}}
-        {{>test}}
-        {{/each}}   
+            {{>test}}
+        {{/each}} 
+        <li>{{ftest}}</li>  
         </ul>
     </div>
 </body>
@@ -24,5 +27,5 @@
 </template>
 
 <template name="test">
-    <h3>{{text}}</h3>
+    <h3>{{_id}}: {{inputText}}</h3>
 </template>
