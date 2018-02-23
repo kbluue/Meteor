@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <header>
+        <h1>Todo List</h1>
+        </header>
+
+        <ul>
+        {{#each myTasks}}
+            {{#if equals8 text}}
+                {{> test}}
+            {{/if}}
+            {{> task}}
+        {{/each}}
+        {{#each mongoTasks}}
+        {{>test}}
+        {{/each}}   
+        </ul>
+    </div>
+</body>
+
+   
+<template name="task">
+<li>{{text}}</li>
+</template>
+
+<template name="test">
+    <h3>{{text}}</h3>
+</template>
